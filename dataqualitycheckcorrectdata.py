@@ -203,7 +203,15 @@ validator.expect_column_values_to_be_in_set(
     "Gender",
     ["Male","Female"]
 )
+
+validator.expect_column_values_to_be_between(
+    "Salary",
+    min_value=0
+
+
+)
 results = validator.validate()
 print(results)
 
+ 
 
